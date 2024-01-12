@@ -1,13 +1,23 @@
-"""Clear console/terminal screen based on Operating System.
-For Windows/MacOS/Linux
 """
+
+A quick utility to clear console/terminal screen based on Operating System.
+For Windows/MacOS/Linux.
+
+VERSION = 0.1.1
+
+"""
+
 import platform
+import os
+import subprocess
 
 
-def clear():
+def clear_screen():
+    """Clears the console/terminal screen based on detected OS.
+    """
+    
     if platform.system() == 'Windows':
-        import os
         os.system('cls')
     else:
-        import subprocess
+        # MacOS and Linux
         subprocess.run('clear', shell=True)
