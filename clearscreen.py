@@ -1,20 +1,10 @@
-"""
-
-A quick utility to clear console/terminal screen based on Operating System.
-For Windows/MacOS/Linux.
-
-
-"""
-
 __version__ = "1.0.0"
-
 
 import platform
 import os
-import subprocess
 
 
-def clearscreen():
+def clear_screen():
     """Clears the console/terminal screen based on detected OS.
     """
     
