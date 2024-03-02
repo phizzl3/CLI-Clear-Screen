@@ -1,7 +1,7 @@
 __version__ = "1.1.0"
 
-import platform
 import os
+import platform
 
 
 def clear_screen():
