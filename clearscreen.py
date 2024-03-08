@@ -1,10 +1,11 @@
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 import os
 import platform
 
 
 def clear_screen():
+    """Clears console based on detected OS."""
     os.system(f"{'cls' if platform.system() == 'Windows' else 'clear'}")
 
 
